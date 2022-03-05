@@ -14,7 +14,6 @@ const Home = () => {
 };
 
 const Dashb = styled.div`
-  background-color: red;
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
