@@ -34,12 +34,13 @@ export const WalletList = styled.div`
   display: flex;
   padding: 5px 5px 10px 5px;
   border-bottom: 1px solid #fff;
+  margin-top: ${(props) => props.mt};
 `;
 
-export const TextContainer=styled.div`
-margin-right: auto;
-margin-left: 20px;
-`
+export const TextContainer = styled.div`
+  margin-right: auto;
+  margin-left: 20px;
+`;
 
 //TITLE STYLES
 export const HeadingLg = styled.h4`
@@ -52,6 +53,15 @@ export const HeadingLg = styled.h4`
 export const HeadingSm = styled.h3`
   font-size: 16px;
   line-height: 21px;
-  color: ${({dark})=>dark?CONSTANTS.THEME.colorBlue :"white"};
+  color: ${({ dark }) => (dark ? CONSTANTS.THEME.colorBlue : "white")};
   font-weight: 700;
+`;
+
+//BUTTON CONTAINER
+export const ButtonContainer = styled.div`
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: ${props=>props.mt};
 `;
