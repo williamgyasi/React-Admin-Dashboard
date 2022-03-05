@@ -3,9 +3,9 @@ import { GridView,AccountBalanceWallet,RemoveRedEye } from "@mui/icons-material"
 import {BgIcon} from './icon-styles'
 
 
-function Icon({children,noBg,bgColor}) {
+function Icon({children,noBg,bgColor, mb,round}) {
   return (
-    <BgIcon bgColor={bgColor}>
+    <BgIcon round={round} mb={mb} bgColor={bgColor}>
         {children}
     </BgIcon>
   )

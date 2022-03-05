@@ -27,13 +27,17 @@ import {
   SideBarListTitle,
   RefferalContainer,
   ReferTop,
-  ImageRef
+  ImageRef,
+  Fixed
 } from "./sidebar-styles";
 import { Icon, Button } from "../../Components";
 function Sidebar() {
   return (
     <Section>
       {/* //logo  */}
+      <Fixed>
+
+      
       <LogoContainer>
         <Logo />
       </LogoContainer>
@@ -129,6 +133,7 @@ function Sidebar() {
           Invite Friends
         </Button>
       </RefferalContainer>
+      </Fixed>
     </Section>
   );
 }

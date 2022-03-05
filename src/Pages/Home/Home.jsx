@@ -16,8 +16,7 @@ const Home = () => {
 const Dashb = styled.div`
   display: flex;
   justify-content: flex-start;
-  align-items: stretch;
-  max-height: 100%;
+  min-height: 100%;
   height: 100vh;
 `;
 

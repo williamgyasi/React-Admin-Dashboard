@@ -10,11 +10,18 @@ export const Section = styled.div`
   height: 100%;
   background-color: ${CONSTANTS.THEME.colorBlue};
   color: #fff;
-  display: flex;
+  position: relative;
+  
+`;
+
+export const Fixed=styled.div`
+position:fixed;
+width: 19%;
+    height: 100%;
+   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
-`;
+`
 
 export const LogoContainer = styled.div`
   margin-top: 10px;

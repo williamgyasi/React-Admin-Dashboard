@@ -10,7 +10,7 @@ export const MainB=styled.div`
 `
 
 export const WalletContainer=styled.div`
-margin-top: 30px;
+margin-top: 5px;
 padding: 10px;
 `
 
@@ -20,11 +20,18 @@ export const WalletContainerHeadings=styled.div`
     justify-content: space-between;
 `
 export const WalletCardsContainer=styled.div`
-   margin-top :20px ;
+   margin-top :15px ;
    display: flex;
    flex-wrap: nowrap;
    align-items: center;
 
+`
+
+export const WalletText=styled.h3`
+font-size:${props=>props.small?"11px":"20px"};
+color:${props=>props.color || "#000"};
+font-weight: ${props=>props.weight};
+margin-top: 3px;
 `
 
 export const WalletCards=styled.div`
@@ -41,13 +48,14 @@ export const CardTop=styled.div`
     margin-bottom: 40px;
 `
 export const CardAmount=styled.h2`
-    
+    font-weight: 700;
 `
 
 export const CardText=styled.span`
     display: block;
     font-size: ${props=>props.small ? "14px":"16px"};
     font-weight: 400;
+    text-align: ${props=>props.center ?"center":"left"};
 `
 
 const Flag=styled.img.attrs({
@@ -75,6 +83,25 @@ export const PeruFlag=styled.img.attrs({
     width:40px;
     border-radius: 50%;
     height:auto
+`
+
+//QUICK LINKS
+export const QuickLinksContainer=styled.div`
+    margin-top: 20px;
+    margin-left: 15px;
+`
+
+export const LinksCard=styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 24px;
+    flex: 0 0 13%;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #F1F5F9;
+    text-align:'center';
+    cursor:pointer
 `
 
 
