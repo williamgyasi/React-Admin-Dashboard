@@ -1,9 +1,14 @@
 import React from 'react'
+import {TextInput,SearchG} from './searchbar-styles'
+import {Search} from '@mui/icons-material'
 
 function SearchBar() {
   return (
-    <div>SearchBar</div>
+    <SearchG>
+        <Search />
+        <TextInput/>
+    </SearchG>
   )
 }
 
-export default SearchBar;
+export default SearchBar

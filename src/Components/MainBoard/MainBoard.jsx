@@ -8,6 +8,7 @@ function MainBoard() {
   return (
     <MainB>
        <Header />
+       
     </MainB>
   )
 }
