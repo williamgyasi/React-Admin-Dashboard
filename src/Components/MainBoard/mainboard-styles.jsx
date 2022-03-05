@@ -32,6 +32,7 @@ font-size:${props=>props.small?"11px":"20px"};
 color:${props=>props.color || "#000"};
 font-weight: ${props=>props.weight};
 margin-top: 3px;
+font-weight: 600;
 `
 
 export const WalletCards=styled.div`

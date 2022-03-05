@@ -114,28 +114,26 @@ function MainBoard() {
            </LinksCard>
 
            <LinksCard>
-              <Icon round="50%" mb={"10px"} bgColor={"#F97316"}>
+              <Icon round="50%" mb={"10px"} bgColor={"#FFCB00"}>
                 <AccountBalanceWallet  sx={{color:"#fff"}} />
               </Icon>
-              <CardText small center >Add New Wallet</CardText>
+              <CardText small center >Mobile Money</CardText>
            </LinksCard>
 
            <LinksCard>
-              <Icon round="50%" mb={"10px"} bgColor={"#F97316"}>
-                <AccountBalanceWallet  sx={{color:"#fff"}} />
-              </Icon>
-              <CardText small center >Add New Wallet</CardText>
-           </LinksCard>
-
-           <LinksCard>
-              <Icon round="50%" mb={"10px"} bgColor={"#F97316"}>
+              <Icon round="50%" mb={"10px"} bgColor={"#F43F5E"}>
                 <AccountBalanceWallet  sx={{color:"#fff"}} />
               </Icon>
               <CardText small center >Payment Link</CardText>
            </LinksCard>
-
          </WalletCardsContainer>
        </QuickLinksContainer>
+
+       <ChartContainer>
+         <CharTitles>
+           
+         </CharTitles>
+       </ChartContainer>
     </MainB>
   )
 }
