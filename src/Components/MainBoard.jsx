@@ -1,7 +1,21 @@
 import React from 'react'
+import styled from 'styled-components'
 
-export default function MainBoard() {
+const MainB=styled.div`
+    flex:4;
+    background-color:blue;
+
+`
+
+function MainBoard() {
   return (
-    <div>I am also the mainboard</div>
+    <MainB>
+        <div>I am something</div>
+    </MainB>
   )
 }
+
+
+
+
+export default MainBoard;
