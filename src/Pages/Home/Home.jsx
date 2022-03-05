@@ -7,9 +7,9 @@ import { Header, MainBoard, Sidebar } from "../../Components";
 const Home = () => {
   return (
     <Dashb>
-      <Sidebar />
-      <MainBoard />
-    </Dashb>
+    <Sidebar />
+    <MainBoard />
+  </Dashb>
   );
 };
 
