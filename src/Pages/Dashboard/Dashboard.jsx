@@ -1,11 +1,23 @@
-import React from 'react'
+import React from "react";
+import styled from 'styled-components'
+
+//COMPONENTS
+import { Header,MainBoard,Sidebar } from "../../Components";
+
+const Dashboard = () => {
+  return (
+    <Dashb>
+        <Sidebar />
+      <MainBoard />
+      <div>I am the dashboard</div>
+    </Dashb>
+  );
+};
+
+const Dashb  = styled.div `
+background-color:red;
 
 
-const Dashboard =()=>{
-    return(
-        <div>I am the dashboard</div>
-    )
-}
+`
 
-
-export default Dashboard
+export default Dashboard;
