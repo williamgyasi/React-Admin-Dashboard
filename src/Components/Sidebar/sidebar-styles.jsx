@@ -10,8 +10,8 @@ export const Section = styled.div`
   height: 100%;
   background-color: ${CONSTANTS.THEME.colorBlue};
   color: #fff;
-  position: relative;
-  
+  position: sticky;
+    
 `;
 
 export const Fixed=styled.div`

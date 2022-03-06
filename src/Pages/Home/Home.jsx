@@ -7,7 +7,6 @@ import { Header, MainBoard, Sidebar } from "../../Components";
 const Home = () => {
   return (
     <Dashb>
-    <Sidebar />
     <MainBoard />
   </Dashb>
   );
@@ -18,6 +17,7 @@ const Dashb = styled.div`
   justify-content: flex-start;
   min-height: 100%;
   height: 100vh;
+  flex:4 ;
 `;
 
 export default Home;

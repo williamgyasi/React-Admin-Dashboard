@@ -83,7 +83,7 @@ function Sidebar() {
               <SideBarListTitle>Dashboard</SideBarListTitle>
           </SideBarListItem>
 
-          <SideBarListItem to={"/"}>
+          <SideBarListItem to={"/wallet"}>
               <Icon>
                 <AccountBalanceWallet sx={{ color: "#fff" }} />
               </Icon>
