@@ -18,9 +18,10 @@ export const WalletContainerHeadings=styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top :${props=>props.mt ||"15px"} ;
 `
 export const WalletCardsContainer=styled.div`
-   margin-top :15px ;
+   margin-top :${props=>props.mt ||"15px"} ;
    display: flex;
    flex-wrap: nowrap;
    align-items: center;
