@@ -28,11 +28,13 @@ export const WalletCardsContainer=styled.div`
 `
 
 export const WalletText=styled.h3`
-font-size:${props=>props.small?"11px":"20px"};
+font-size:${props=>props.small?"12px":"15px"};
 color:${props=>props.color || "#000"};
 font-weight: ${props=>props.weight};
 margin-top: 3px;
-font-weight: 600;
+font-weight: ${props=>props.bold?"700":"600"};
+margin-left:${props=>props.ml} ;
+margin-right:${props=>props.mr} ;
 `
 
 export const WalletCards=styled.div`
@@ -59,9 +61,7 @@ export const CardText=styled.span`
     text-align: ${props=>props.center ?"center":"left"};
 `
 
-const Flag=styled.img.attrs({
 
-})
 export const UsaFlag=styled.img.attrs({
     src:`${usa}`
 })`
@@ -84,7 +84,7 @@ export const PeruFlag=styled.img.attrs({
     width:40px;
     border-radius: 50%;
     height:auto
-`
+`;
 
 //QUICK LINKS
 export const QuickLinksContainer=styled.div`
@@ -105,5 +105,45 @@ export const LinksCard=styled.div`
     cursor:pointer
 `
 
+export const ChartContainer=styled.div`
+    padding:10px ;
+    margin-top:10px ;
+`
 
+export const ChartTitlesContainer=styled.div`
+display:flex ;
+align-items:center ;
+justify-content:space-between ;
+`
 
+export const TransactionsContainer=styled.div`
+margin-top:20px ;
+display:flex ;
+justify-content:flex-end ;
+align-items:center ;
+`
+
+export const Transaction=styled.div`
+    display:flex ;
+    align-items:center ;
+   
+    &:not(:last-child){
+        margin-right:50px ;
+    }
+`
+export const ChartSection=styled.div`
+    margin-top:30px ;
+`
+
+export const Left=styled.div`
+    display:flex ;
+    align-items:center ;
+    justify-content:center ;
+`
+export const Right=styled.div`
+    
+`
+
+export const TextContainer=styled.div`
+    margin-left:10px ;
+`
