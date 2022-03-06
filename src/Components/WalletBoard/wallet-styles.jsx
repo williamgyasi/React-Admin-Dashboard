@@ -6,3 +6,4 @@ export const WalletBoardG=styled.div`
     flex-direction: column;
     padding: 20px 30px;
 `
+
