@@ -7,3 +7,6 @@ export {default as SearchBar} from './SearchBar/SearchBar'
 export {default as Charts} from './Charts/Charts.jsx'
 export {default as WalletBoard} from './WalletBoard/WalletBoard.jsx'
 export {default as IconButton} from './IconButton/IconButton.jsx'
+export {default as Tabs} from './Tabs/Tabs.jsx'
+export {default as TabPanel} from './TabPanel/TabPanel.jsx'
+
