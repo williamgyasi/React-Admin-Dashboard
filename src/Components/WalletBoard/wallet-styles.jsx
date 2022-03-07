@@ -20,14 +20,12 @@ export const WalletCollection=styled.div`
     padding:10px ;
 `
 
-export const WalletDetails=styled.div`
-    flex:1 ;
-    border:1px solid ;
-`
+
 
 export const WalletSearchContainer=styled.div`
 display:flex ;
 align-items:center ;
+
 `
 
 export const WalletTabs=styled(Tabs)`
@@ -45,10 +43,10 @@ export const TextSpan=styled.span`
 `
 export const WalletTabListContainer=styled.div`
     margin-top:10px ;
+    width:100% ;
 `
 
 export const WalletTabList=styled.div`
-    width:100%;
     padding:16px ;
     display:flex ;
     align-items:center ;
@@ -56,20 +54,30 @@ export const WalletTabList=styled.div`
 `
 const Text=css`
     font-family:'Nunito Sans' ;
-    font-size:"16px" ;
     line-height:"150%" ;
-    color:"#001B21" ;
 `
 
 
 export const TextSm=styled.h3`
-    
+${Text}
+    font-size:14px ;
+    font-weight:300 ;
 `
 export const TextMd=styled.h2`
-    
+    ${Text}
+font-size:16px ;
+font-weight:600 ;
+color:#2B4146;
 `
 export const TextLg=styled.h1`
 ${Text}
 font-size:16px ;
 font-weight:500 ;
+`
+
+
+//WALLET DETAILS
+export const WalletDetails=styled.div`
+    flex:1 ;
+    border:1px solid ;
 `

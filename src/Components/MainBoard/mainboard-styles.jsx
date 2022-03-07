@@ -146,5 +146,6 @@ export const Right=styled.div`
 `
 
 export const TextContainer=styled.div`
-    margin-left:10px ;
+    margin-left:${props=>props.ml ||"10px"} ;
+
 `

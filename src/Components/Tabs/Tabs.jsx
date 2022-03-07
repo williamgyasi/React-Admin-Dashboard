@@ -16,14 +16,13 @@ function a11yProps(index) {
 export default function BasicTabs({ children,handleChange,value }) {
 
   return (
-    <Box sx={{ width: "100%", }}>
+    <Box sx={{ width: "400px" }}>
       <Box >
         <Tabs
           TabIndicatorProps={{ style: { backgroundColor: "#017189" } }}
           value={value}
           onChange={handleChange}
-          aria-label="basic tabs example"
-          sx={{width:"100%"}}
+          
         >
           <Tab
             sx={{ fontSize: 12, fontFamily: "Nunito Sans" }}

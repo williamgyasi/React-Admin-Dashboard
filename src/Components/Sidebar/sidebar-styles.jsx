@@ -7,11 +7,10 @@ import {Link} from 'react-router-dom'
 
 export const Section = styled.div`
   flex: 1;
-  height: 100%;
   background-color: ${CONSTANTS.THEME.colorBlue};
   color: #fff;
   position: sticky;
-    
+
 `;
 
 export const Fixed=styled.div`
@@ -21,6 +20,7 @@ width: 19%;
    display: flex;
   flex-direction: column;
   align-items: center;
+  max-height:100vh ;
 `
 
 export const LogoContainer = styled.div`

@@ -13,6 +13,7 @@ import {
   WalletTabList,
   TextLg,
   TextSm,
+  TextMd
 } from "./wallet-styles";
 import {
   WalletContainerHeadings,
@@ -63,10 +64,38 @@ function WalletBoard() {
                       <TextLg>EUR Wallet</TextLg>
                       <TextSm>EUR</TextSm>
                     </TextContainer>
-                    <TextContainer>
-                      <TextLg>
+                    <TextContainer ml={"auto"}>
+                      <TextMd>
                         <span>&euro;</span>2,000,000.50
-                      </TextLg>
+                      </TextMd>
+                      <TextSm>Default</TextSm>
+                    </TextContainer>
+                  </WalletTabList>
+
+                  <WalletTabList>
+                    <UsaFlag />
+                    <TextContainer>
+                      <TextLg>Personal wallet</TextLg>
+                      <TextSm>USD</TextSm>
+                    </TextContainer>
+                    <TextContainer ml={"auto"}>
+                      <TextMd>
+                        <span>$</span>10,250.00
+                      </TextMd>
+                      <TextSm>Default</TextSm>
+                    </TextContainer>
+                  </WalletTabList>
+
+                  <WalletTabList>
+                    <UkFlag />
+                    <TextContainer>
+                      <TextLg>School savings</TextLg>
+                      <TextSm>GPB</TextSm>
+                    </TextContainer>
+                    <TextContainer ml={"auto"}>
+                      <TextMd>
+                        <span>&pound;</span>500.00
+                      </TextMd>
                       <TextSm>Default</TextSm>
                     </TextContainer>
                   </WalletTabList>
@@ -82,7 +111,9 @@ function WalletBoard() {
           </WalletTabs>
         </WalletCollection>
 
-        <WalletDetails></WalletDetails>
+        <WalletDetails>
+          
+        </WalletDetails>
       </WalletView>
     </WalletBoardG>
   );
