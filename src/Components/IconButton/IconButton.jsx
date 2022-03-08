@@ -4,9 +4,9 @@ import {IconButtonG,IconButtonText} from './iconbutton-styles'
 
 function IconButton({children,buttonText}) {
   return (
-    <IconButtonG>
+    <IconButtonG noBg>
         {children}
-        <IconButtonText>{buttonText}</IconButtonText>
+        <IconButtonText noBg>{buttonText}</IconButtonText>
     </IconButtonG>
   )
 }

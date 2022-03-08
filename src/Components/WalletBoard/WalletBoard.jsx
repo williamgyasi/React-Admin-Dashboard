@@ -1,5 +1,4 @@
 import React from "react";
-import { Header, Button } from "..";
 import {
   WalletBoardG,
   WalletSearchContainer,
@@ -28,8 +27,15 @@ import {
   UkFlag,
   PeruFlag,
 } from "../MainBoard/mainboard-styles";
-import { IconButton, SearchBar, TabPanel, Icon,Button } from "..";
-import { Add, Circle, KeyboardArrowDown } from "@mui/icons-material";
+import { IconButton, SearchBar, TabPanel, Icon, Button, Header } from "..";
+import {
+  Add,
+  Circle,
+  KeyboardArrowDown,
+  Send,
+  SendAndArchive,
+  SwapHoriz,
+} from "@mui/icons-material";
 
 import BasicTabs from "../Tabs/Tabs";
 
@@ -119,13 +125,28 @@ function WalletBoard() {
         <WalletDetails>
           <AmountContainer>
             <Icon>
-              <Circle sx={{ color: "#22C55E", fontSize: 10, marginRight: 1,marginLeft:6 }} />
+              <Circle
+                sx={{
+                  color: "#22C55E",
+                  fontSize: 10,
+                  marginRight: 1,
+                  marginLeft: 6,
+                }}
+              />
               <TextSpan>Active</TextSpan>
             </Icon>
-            <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
+            >
               <TextContainer>
                 <TextMd>EUR Wallet</TextMd>
-                <TextMd bold color="#0A6375">EUR</TextMd>
+                <TextMd bold color="#0A6375">
+                  EUR
+                </TextMd>
               </TextContainer>
 
               <HeadingLg>
@@ -142,25 +163,44 @@ function WalletBoard() {
 
             <AmountTypeDetailsContainer>
               <TextSpan>Total Incoming</TextSpan>
-              <TextSpan><span>&euro;</span>2,000,000.50</TextSpan>
+              <TextSpan>
+                <span>&euro;</span>2,000,000.50
+              </TextSpan>
             </AmountTypeDetailsContainer>
 
             <AmountTypeDetailsContainer>
               <TextSpan>Ledger Balance</TextSpan>
-              <TextSpan><span>&euro;</span>00.00</TextSpan>
+              <TextSpan>
+                <span>&euro;</span>00.00
+              </TextSpan>
             </AmountTypeDetailsContainer>
 
             <AmountTypeDetailsContainer>
               <TextSpan>Ledger Balance</TextSpan>
-              <TextSpan><span>&euro;</span>5,000,000.50</TextSpan>
+              <TextSpan>
+                <span>&euro;</span>5,000,000.50
+              </TextSpan>
             </AmountTypeDetailsContainer>
           </AmountTypeContainer>
 
           <AmountButtonsContainer>
-            <Button>
+            <IconButton noBg buttonText={"Payment"}>
+              <Send sx={{ color: "#017189" }} />
+            </IconButton>
 
-            </Button>
+            <IconButton noBg buttonText={"Pay In"}>
+              <Send sx={{ color: "#017189" }} />
+            </IconButton>
+
+            <IconButton noBg buttonText={"Exchange"}>
+              <SwapHoriz sx={{ color: "#017189" }} />
+            </IconButton>
           </AmountButtonsContainer>
+
+          <DropDownContainer>
+            <TextSpan color="#017189">All</TextSpan>
+            <KeyboardArrowDown sx={{ color: "#017189" }} />
+          </DropDownContainer>
         </WalletDetails>
       </WalletView>
     </WalletBoardG>

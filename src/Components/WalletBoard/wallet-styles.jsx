@@ -114,6 +114,7 @@ export const AmountButtonsContainer=styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
+margin-top: 20px;
 `
 
 export const AmountTabsContainer=styled.div`
