@@ -18,6 +18,7 @@ import {
   AmountTypeContainer,
   AmountTypeDetailsContainer,
   AmountButtonsContainer,
+  AmountTabsContainer,
 } from "./wallet-styles";
 import {
   WalletContainerHeadings,
@@ -198,9 +199,13 @@ function WalletBoard() {
           </AmountButtonsContainer>
 
           <DropDownContainer mt={"20px"}>
-            <TextSpan color="#017189">All</TextSpan>
+            <TextSpan color="#017189">More Options</TextSpan>
             <KeyboardArrowDown sx={{ color: "#017189" }} />
           </DropDownContainer>
+
+          <AmountTabsContainer>
+            
+          </AmountTabsContainer>
         </WalletDetails>
       </WalletView>
     </WalletBoardG>
