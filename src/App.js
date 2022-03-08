@@ -8,15 +8,13 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <div className="container">
-        <Sidebar />
-      <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/wallet" element={<Wallet/>} />
-
-        </Routes>
-      </div>
-        
+        <div className="container">
+          <Sidebar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/wallet" element={<Wallet />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </div>
   );

@@ -20,7 +20,7 @@ width: 19%;
    display: flex;
   flex-direction: column;
   align-items: center;
-  max-height:100vh ;
+  
 `
 
 export const LogoContainer = styled.div`
