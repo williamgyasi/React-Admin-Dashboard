@@ -13,7 +13,8 @@ import {
   WalletTabList,
   TextLg,
   TextSm,
-  TextMd
+  TextMd,
+  AmountContainer
 } from "./wallet-styles";
 import {
   WalletContainerHeadings,
@@ -24,7 +25,7 @@ import {
   PeruFlag,
 } from "../MainBoard/mainboard-styles";
 import { IconButton, SearchBar, TabPanel } from "..";
-import { Add, KeyboardArrowDown } from "@mui/icons-material";
+import { Add, Circle, KeyboardArrowDown,Icon } from "@mui/icons-material";
 
 import BasicTabs from "../Tabs/Tabs";
 
@@ -112,6 +113,12 @@ function WalletBoard() {
         </WalletCollection>
 
         <WalletDetails>
+          <AmountContainer>
+            <Icon>
+              <Circle sx={{color:"#22C55E"}} />
+              <TextSpan>Active</TextSpan>
+            </Icon>
+          </AmountContainer>
           
         </WalletDetails>
       </WalletView>

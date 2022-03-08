@@ -79,5 +79,23 @@ font-weight:500 ;
 //WALLET DETAILS
 export const WalletDetails=styled.div`
     flex:1 ;
+    padding:10px 40px;
+`
+
+export const AmountContainer=styled.div`
+    
+`
+export const AmountTypeContainer=styled.div`
+
+`
+export const AmountTypeDetailsContainer=styled.div`
+
+`
+
+export const AmountButtonsContainer=styled.div`
+
+`
+
+export const AmountTabsContainer=styled.div`
     
 `
