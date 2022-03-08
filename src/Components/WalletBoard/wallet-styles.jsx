@@ -66,15 +66,19 @@ ${Text}
 export const TextMd=styled.h2`
     ${Text}
 font-size:16px ;
-font-weight:600 ;
-color:#2B4146;
+font-weight:${props=>props.bold?"700":"600"} ;
+color:${props=>props.color || "#2B4146"};
+line-height: 150%;
 `
 export const TextLg=styled.h1`
 ${Text}
 font-size:16px ;
 font-weight:500 ;
 `
-
+export const HeadingLg=styled.h1`
+    font-size: 28px;
+    font-weight: 700;
+`
 
 //WALLET DETAILS
 export const WalletDetails=styled.div`
@@ -83,17 +87,33 @@ export const WalletDetails=styled.div`
 `
 
 export const AmountContainer=styled.div`
-    
+padding: 24px;
+border: 1px solid #F3F4F6;
+border-radius: 16px;
 `
-export const AmountTypeContainer=styled.div`
 
+
+export const AmountTypeContainer=styled.div`
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+align-content: space-between;
+margin-top: 20px;
 `
 export const AmountTypeDetailsContainer=styled.div`
-
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-right: 10px;
+flex: 0 0 48%;
+margin-bottom: 10px;
 `
 
 export const AmountButtonsContainer=styled.div`
-
+display: flex;
+align-items: center;
+justify-content: space-between;
 `
 
 export const AmountTabsContainer=styled.div`

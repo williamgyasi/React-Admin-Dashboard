@@ -14,7 +14,11 @@ import {
   TextLg,
   TextSm,
   TextMd,
-  AmountContainer
+  AmountContainer,
+  HeadingLg,
+  AmountTypeContainer,
+  AmountTypeDetailsContainer,
+  AmountButtonsContainer,
 } from "./wallet-styles";
 import {
   WalletContainerHeadings,
@@ -24,8 +28,8 @@ import {
   UkFlag,
   PeruFlag,
 } from "../MainBoard/mainboard-styles";
-import { IconButton, SearchBar, TabPanel } from "..";
-import { Add, Circle, KeyboardArrowDown,Icon } from "@mui/icons-material";
+import { IconButton, SearchBar, TabPanel, Icon,Button } from "..";
+import { Add, Circle, KeyboardArrowDown } from "@mui/icons-material";
 
 import BasicTabs from "../Tabs/Tabs";
 
@@ -115,11 +119,48 @@ function WalletBoard() {
         <WalletDetails>
           <AmountContainer>
             <Icon>
-              <Circle sx={{color:"#22C55E"}} />
+              <Circle sx={{ color: "#22C55E", fontSize: 10, marginRight: 1,marginLeft:6 }} />
               <TextSpan>Active</TextSpan>
             </Icon>
+            <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+              <TextContainer>
+                <TextMd>EUR Wallet</TextMd>
+                <TextMd bold color="#0A6375">EUR</TextMd>
+              </TextContainer>
+
+              <HeadingLg>
+                <span>&euro;</span>2,000,000.50
+              </HeadingLg>
+            </div>
           </AmountContainer>
-          
+
+          <AmountTypeContainer>
+            <AmountTypeDetailsContainer>
+              <TextSpan>Ledger Balance</TextSpan>
+              <TextSpan>2,000,000.50</TextSpan>
+            </AmountTypeDetailsContainer>
+
+            <AmountTypeDetailsContainer>
+              <TextSpan>Total Incoming</TextSpan>
+              <TextSpan><span>&euro;</span>2,000,000.50</TextSpan>
+            </AmountTypeDetailsContainer>
+
+            <AmountTypeDetailsContainer>
+              <TextSpan>Ledger Balance</TextSpan>
+              <TextSpan><span>&euro;</span>00.00</TextSpan>
+            </AmountTypeDetailsContainer>
+
+            <AmountTypeDetailsContainer>
+              <TextSpan>Ledger Balance</TextSpan>
+              <TextSpan><span>&euro;</span>5,000,000.50</TextSpan>
+            </AmountTypeDetailsContainer>
+          </AmountTypeContainer>
+
+          <AmountButtonsContainer>
+            <Button>
+
+            </Button>
+          </AmountButtonsContainer>
         </WalletDetails>
       </WalletView>
     </WalletBoardG>
