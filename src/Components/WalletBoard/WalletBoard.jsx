@@ -197,7 +197,7 @@ function WalletBoard() {
             </IconButton>
           </AmountButtonsContainer>
 
-          <DropDownContainer>
+          <DropDownContainer mt={"20px"}>
             <TextSpan color="#017189">All</TextSpan>
             <KeyboardArrowDown sx={{ color: "#017189" }} />
           </DropDownContainer>

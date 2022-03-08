@@ -36,7 +36,7 @@ export const DropDownContainer=styled.div`
     margin-left: 10px ;
     display:flex ;
     align-items:center ;
-    justify-content:center ;
+    
 `
 export const TextSpan=styled.span`
     color:${props=>props.color || "#000"} ;
