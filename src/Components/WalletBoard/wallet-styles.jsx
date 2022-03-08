@@ -119,5 +119,5 @@ margin-top: 20px;
 `
 
 export const AmountTabsContainer=styled.div`
-    
+    margin-top: 20px;
 `

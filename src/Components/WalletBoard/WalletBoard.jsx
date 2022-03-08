@@ -37,14 +37,26 @@ import {
   SendAndArchive,
   SwapHoriz,
 } from "@mui/icons-material";
+import { Box, Tabs, Tab } from "@mui/material";
 
 import BasicTabs from "../Tabs/Tabs";
 
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
+  };
+}
+
 function WalletBoard() {
   const [value, setValue] = React.useState(0);
+  const [newTabChange, setNewTabChange] = React.useState(0);
 
   const onChangeTabs = (event, newValue) => {
     setValue(newValue);
+  };
+  const handleChange = (event, newValue) => {
+    setNewTabChange(newValue);
   };
   return (
     <WalletBoardG>
@@ -204,7 +216,42 @@ function WalletBoard() {
           </DropDownContainer>
 
           <AmountTabsContainer>
-            
+            <Box sx={{ width: "100%" }}>
+              <Box sx={{}}>
+                <Tabs
+                  TabIndicatorProps={{
+                    style: {
+                      backgroundColor: "#017189",
+                      border: "2px solid #017189",
+                    },
+                  }}
+                  value={newTabChange}
+                  onChange={handleChange}
+                >
+                  <Tab
+                    sx={{ fontSize: 12, fontFamily: "Nunito Sans" }}
+                    label="Activity"
+                  />
+                  <Tab
+                    sx={{ fontSize: 12, fontFamily: "Nunito Sans" }}
+                    label="Transcations"
+                  />
+                  <Tab
+                    sx={{ fontSize: 12, fontFamily: "Nunito Sans" }}
+                    label="Invoices"
+                  />
+                </Tabs>
+              </Box>
+              <TabPanel value={newTabChange} index={0}>
+                Item One
+              </TabPanel>
+              <TabPanel value={newTabChange} index={1}>
+                Item Two
+              </TabPanel>
+              <TabPanel value={newTabChange} index={2}>
+                Item Three
+              </TabPanel>
+            </Box>
           </AmountTabsContainer>
         </WalletDetails>
       </WalletView>
