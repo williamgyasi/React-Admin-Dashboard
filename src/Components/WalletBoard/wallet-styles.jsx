@@ -79,5 +79,5 @@ font-weight:500 ;
 //WALLET DETAILS
 export const WalletDetails=styled.div`
     flex:1 ;
-    border:1px solid ;
+    
 `
