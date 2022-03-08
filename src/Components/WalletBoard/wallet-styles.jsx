@@ -122,3 +122,8 @@ margin-top: 20px;
 export const AmountTabsContainer=styled.div`
     margin-top: 20px;
 `
+export const ChartContainer=styled.div`
+    width:100%,
+    height:250px,
+    
+`

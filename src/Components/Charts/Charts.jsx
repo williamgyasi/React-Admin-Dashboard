@@ -74,12 +74,12 @@ const data = [
   },
 ];
 
-function Charts() {
+function Charts({width,height}) {
   return (
     <div>
+      <ResponsiveContainer width={"95%"} height={250}>
       <LineChart
-        width={1000}
-        height={300}
+      
         data={data}
         margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
       >
@@ -89,6 +89,8 @@ function Charts() {
         <Tooltip  />
         <Line type="monotone" strokeWidth={5} dataKey="amt" stroke="#017189" />
       </LineChart>
+      </ResponsiveContainer>
+      
     </div>
   );
 }

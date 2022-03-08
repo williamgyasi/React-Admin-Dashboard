@@ -27,8 +27,9 @@ import {
   UsaFlag,
   UkFlag,
   PeruFlag,
+  ChartContainer,
 } from "../MainBoard/mainboard-styles";
-import { IconButton, SearchBar, TabPanel, Icon, Button, Header } from "..";
+import { IconButton, SearchBar, TabPanel, Icon, Button, Header,Charts } from "..";
 import {
   Add,
   Circle,
@@ -247,12 +248,16 @@ function WalletBoard() {
                   <TextSpan color="#017189">Month</TextSpan>
                   <KeyboardArrowDown sx={{ color: "#017189" }} />
                 </DropDownContainer>
+
+                <ChartContainer>
+                  <Charts height={"100%"} />
+                </ChartContainer>
               </TabPanel>
               <TabPanel value={newTabChange} index={1}>
-                Item Two
+                No Transactions
               </TabPanel>
               <TabPanel value={newTabChange} index={2}>
-                Item Three
+                No Invoices
               </TabPanel>
             </Box>
           </AmountTabsContainer>
