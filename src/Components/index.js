@@ -9,4 +9,5 @@ export {default as WalletBoard} from './WalletBoard/WalletBoard.jsx'
 export {default as IconButton} from './IconButton/IconButton.jsx'
 export {default as Tabs} from './Tabs/Tabs.jsx'
 export {default as TabPanel} from './TabPanel/TabPanel.jsx'
+export {default as Dropdown} from './Dropdown/Dropdown.jsx'
 

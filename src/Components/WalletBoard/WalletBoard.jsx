@@ -243,7 +243,10 @@ function WalletBoard() {
                 </Tabs>
               </Box>
               <TabPanel value={newTabChange} index={0}>
-                Item One
+                <DropDownContainer jc={"flex-end"}>
+                  <TextSpan color="#017189">Month</TextSpan>
+                  <KeyboardArrowDown sx={{ color: "#017189" }} />
+                </DropDownContainer>
               </TabPanel>
               <TabPanel value={newTabChange} index={1}>
                 Item Two

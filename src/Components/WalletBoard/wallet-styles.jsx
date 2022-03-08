@@ -36,6 +36,7 @@ export const DropDownContainer=styled.div`
     margin-left: 10px ;
     display:flex ;
     align-items:center ;
+    justify-content: ${props=>props.jc};
     margin-top: ${props=>props.mt};
     
 `
