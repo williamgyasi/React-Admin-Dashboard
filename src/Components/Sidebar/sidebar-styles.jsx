@@ -15,11 +15,9 @@ export const Section = styled.div`
   flex-direction: column;
   align-items: center;
   z-index: 10;
-  @media only screen and (max-width: 768px) {
-  }
-
-  @media only screen and (max-width: 320px) {
-    left: ${(props) => (props.active ? "-250px" : "0px")};
+  @media only screen and (max-width: 600px) {
+    left: ${(props) => (props.active ? "-300px" : "0px")};
+    position: absolute;
   }
 `;
 

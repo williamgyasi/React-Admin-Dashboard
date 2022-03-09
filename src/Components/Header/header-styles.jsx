@@ -7,6 +7,11 @@ export const HeadG = styled.div`
   align-items: center;
   justify-content: space-between;
   position: relative;
+  @media only screen and (max-width: 350px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
 `;
 
@@ -18,6 +23,13 @@ export const TitleLg = styled.h3`
   margin-left: 20px;
   @media only screen and (max-width: 1000px) {
    font-size: 15px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+  @media only screen and (max-width: 350px) {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 `;
 
@@ -34,7 +46,7 @@ export const ButtonContainer = styled.div`
   cursor: pointer;
  visibility: hidden;
  z-index: 100;
- @media only screen and (max-width:320px){
+ @media only screen and (max-width:600px){
     visibility: visible;
   }
 `;
@@ -43,16 +55,25 @@ export const TitleSm = styled.h4`
   font-size: 12px;
   color: ${(props) => props.color};
   font-weight: 500;
+  
+
   @media only screen and (max-width: 1000px) {
-   font-size: 10px;
+   font-size: 11px;
   }
+  @media only screen and (max-width: 350px) {
+   font-size: 15px;
+  }
+  
 `;
 
 export const Profiler = styled.div`
   display: flex;
   align-items: center;
-  @media only screen and (max-width: 320px) {
-    flex-direction: column;
+  @media only screen and (max-width: 350px) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
   }
 `;
 
@@ -63,7 +84,7 @@ export const PlantedContainer = styled.div`
   justify-content: center;
   margin-left: 20px;
   margin-right: 20px;
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 350px) {
     flex-direction: row;
     margin: 0;
   }
@@ -90,11 +111,9 @@ export const ProfileContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   margin-left: 20px;
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 350px) {
     font-size: 16px;
     align-items: flex-start;
-    margin-left: 0;
-    margin-bottom: 10px;
   }
 `;
 

@@ -10,7 +10,8 @@ export const SearchG=styled.div`
     padding: 15px;
 
     @media only screen and (max-width: 320px) {
-    width: 100%;
+    width: 400px;
+    margin-bottom: 10px;
   }
 `
 

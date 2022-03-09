@@ -24,9 +24,9 @@ function Header() {
   return (
     <HeadG>
       <TitleLg>Welcome,Huss Smith</TitleLg>
-
+      <SearchBar />
       <Profiler>
-        <SearchBar />
+       
         <PlantedContainer>
           <TreeImg />
           <PlantedTitle>0 Planted</PlantedTitle>
