@@ -5,28 +5,38 @@ import refer from "../../Assets/refer.png";
 import { Link } from "react-router-dom";
 
 export const Section = styled.div`
-  flex: 1;
   background-color: ${CONSTANTS.THEME.colorBlue};
   color: #fff;
-  position: sticky;
+  width: 250px;
+  flex: 1;
+  max-width: 100%;
+  min-height: 100vh;
+  transition: all 500ms ease-in;
+  height: 100%;
+  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 60px;
-  height: 100vh;
-  transition: all 500ms ease-in;
-
-  &:hover{
-    width: 250px;
-  }
-  
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: -webkit-sticky;
 `;
 
 export const Fixed = styled.div`
   width: 250px;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  
+  flex-basis: 250px;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  @media only screen and  (max-with:320px){
+
+  }
 `;
 
 export const LogoContainer = styled.div`

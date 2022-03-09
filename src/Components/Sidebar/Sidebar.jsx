@@ -36,7 +36,7 @@ function Sidebar() {
     <Section>
       {/* //logo  */}
 
-      <Fixed>
+      
         <LogoContainer>
           <Logo />
         </LogoContainer>
@@ -131,7 +131,7 @@ function Sidebar() {
             Invite Friends
           </Button>
         </RefferalContainer>
-      </Fixed>
+     
     </Section>
   );
 }
