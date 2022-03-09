@@ -121,6 +121,7 @@ export const LinksCard = styled.div`
   @media only screen and (max-width: 400px) {
     width: 100%;
     margin-bottom: 10px;
+    padding:30px ;
   }
 `;
 
