@@ -32,8 +32,9 @@ import {
 } from "./sidebar-styles";
 import { Icon, Button } from "../../Components";
 function Sidebar() {
+  const [active,setActive]=useState(true)
   return (
-    <Section>
+    <Section active={active}>
       {/* //logo  */}
 
       

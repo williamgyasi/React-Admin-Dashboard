@@ -1,7 +1,7 @@
-import React from "react";
-import { 
-  HeadG, 
-  TitleLg, 
+import React, { useState } from "react";
+import {
+  HeadG,
+  TitleLg,
   Profiler,
   PlantedContainer,
   ProfileContainer,
@@ -9,17 +9,24 @@ import {
   PlantedTitle,
   Avatar,
   TitleSm,
-  ButtonContainer
+  ButtonContainer,
+  
 } from "./header-styles";
 import { IconButton, SearchBar } from "..";
-import { KeyboardArrowDown, Menu, NotificationsOutlined } from "@mui/icons-material";
+import {
+  KeyboardArrowDown,
+  Menu,
+  NotificationsOutlined,
+} from "@mui/icons-material";
 
 function Header() {
+  const [sideBar,setSideBar]=useState(true);
+  const showSideBar=()=>setSideBar(!sideBar)
   return (
     <HeadG>
-        <ButtonContainer>
-        <Menu sx={{color:"#22c55E"}} />
-        </ButtonContainer>
+      <ButtonContainer onClick={showSideBar}>
+        <Menu sx={{ color: "#fff" }} />
+      </ButtonContainer>
       <TitleLg>Welcome,Huss Smith</TitleLg>
       <Profiler>
         <SearchBar />
@@ -27,7 +34,6 @@ function Header() {
           <TreeImg />
           <PlantedTitle>0 Planted</PlantedTitle>
         </PlantedContainer>
-
 
         <NotificationsOutlined />
         <ProfileContainer>

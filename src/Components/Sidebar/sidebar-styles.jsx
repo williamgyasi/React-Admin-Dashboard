@@ -23,8 +23,10 @@ export const Section = styled.div`
   flex-direction: column;
   align-items: center;
   position: -webkit-sticky;
+  z-index: 1;
   @media only screen and (max-width:320px){
-    left: -250px;
+    left: ${props=>props.active?"-250px":"0px" };
+    
   }
 `;
 
