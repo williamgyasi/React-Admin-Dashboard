@@ -1,27 +1,33 @@
 import styled from "styled-components";
 import * as CONSTANTS from "../../_shared/constants";
 import logo from "../../Assets/geniopay.png";
-import refer from '../../Assets/refer.png'
-import {Link} from 'react-router-dom'
-
+import refer from "../../Assets/refer.png";
+import { Link } from "react-router-dom";
 
 export const Section = styled.div`
   flex: 1;
   background-color: ${CONSTANTS.THEME.colorBlue};
   color: #fff;
   position: sticky;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100vh;
+  transition: all 500ms ease-in;
 
+  &:hover{
+    width: 250px;
+  }
+  
 `;
 
-export const Fixed=styled.div`
-position:fixed;
-width: 19%;
-    height: 100%;
-   display: flex;
+export const Fixed = styled.div`
+  width: 250px;
+  height: 100%;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  
-`
+`;
 
 export const LogoContainer = styled.div`
   margin-top: 10px;
@@ -56,14 +62,14 @@ export const TextContainer = styled.div`
 export const HeadingLg = styled.h4`
   font-size: 12px;
   line-height: 15px;
-  color: ${props=>props.dark ?"#000":"#fff"};
+  color: ${(props) => (props.dark ? "#000" : "#fff")};
   font-weight: 400;
 `;
 
 export const HeadingSm = styled.h3`
   font-size: 14px;
   line-height: 15px;
-  color: ${props=>props.dark ?"#000":"#fff"};
+  color: ${(props) => (props.dark ? "#000" : "#fff")};
   font-weight: 700;
 `;
 
@@ -73,57 +79,55 @@ export const ButtonContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: ${props=>props.mt};
+  margin-top: ${(props) => props.mt};
 `;
 
 //DASHBOARD MENU
-export const SideBarMenu=styled.div`
-    margin-top: 10px;
-    width: 90%;
-`
+export const SideBarMenu = styled.div`
+  margin-top: 10px;
+  width: 90%;
+`;
 
-export const SideBarList=styled.ul`
-    list-style: none;
-`
-export const SideBarListItem=styled(Link)`
-display: flex;
-align-items: center;
-flex-direction: row;
-padding: 5px 10px;
-text-decoration: none;
-font-size: 16px;
-font-weight: 700;
+export const SideBarList = styled.ul`
+  list-style: none;
+`;
+export const SideBarListItem = styled(Link)`
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
 
+  &:hover {
+  }
+`;
 
-&:hover{
-
-}
-`
-
-export const SideBarListTitle=styled.span`
-color:#fff;
-margin-left: 20px;
-`
+export const SideBarListTitle = styled.span`
+  color: #fff;
+  margin-left: 20px;
+`;
 
 //REFERAL
-export const RefferalContainer=styled.div`
-    background-color: #FFF5E9;
-    margin-top:10px;
-    width:90%;
-    border-radius: 8px;
-    padding: 14px 6px 14px 11px;
-`
-export const ReferTop=styled.div`
-display: flex;
-align-items: flex-start;
-margin-bottom: 10px;
-`
+export const RefferalContainer = styled.div`
+  background-color: #fff5e9;
+  margin-top: 10px;
+  width: 90%;
+  border-radius: 8px;
+  padding: 14px 6px 14px 11px;
+`;
+export const ReferTop = styled.div`
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+`;
 
 export const ImageRef = styled.img.attrs({
-    src: `${refer}`,
-    alt: "Refer logo",
-  })`
-    width: 50px;
-    height: auto;
-    margin-right: 20px;
-  `;
+  src: `${refer}`,
+  alt: "Refer logo",
+})`
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+`;

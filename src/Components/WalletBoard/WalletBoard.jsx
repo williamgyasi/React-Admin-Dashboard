@@ -183,14 +183,14 @@ function WalletBoard() {
             </AmountTypeDetailsContainer>
 
             <AmountTypeDetailsContainer>
-              <TextSpan>Ledger Balance</TextSpan>
+              <TextSpan>Blocked Balance</TextSpan>
               <TextSpan>
                 <span>&euro;</span>00.00
               </TextSpan>
             </AmountTypeDetailsContainer>
 
             <AmountTypeDetailsContainer>
-              <TextSpan>Ledger Balance</TextSpan>
+              <TextSpan>Total Outgoing</TextSpan>
               <TextSpan>
                 <span>&euro;</span>5,000,000.50
               </TextSpan>
@@ -244,7 +244,7 @@ function WalletBoard() {
                 </Tabs>
               </Box>
               <TabPanel value={newTabChange} index={0}>
-                <DropDownContainer jc={"flex-end"}>
+                <DropDownContainer jc={"flex-end"} mt={"20px"}>
                   <TextSpan color="#017189">Month</TextSpan>
                   <KeyboardArrowDown sx={{ color: "#017189" }} />
                 </DropDownContainer>
