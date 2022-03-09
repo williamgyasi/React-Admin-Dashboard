@@ -6,12 +6,8 @@ import peru from "../../Assets/periut.png";
 export const MainB = styled.div`
   flex-direction: column;
   padding: 20px 10px;
-  max-width: calc(100vw * 0.81);
-  margin-left: 250px;
+  width: 100%;
   @media only screen and (max-width: 320px) {
-    padding: 10px 20px;
-    margin-left: 0;
-    width: 100%;
   }
 `;
 

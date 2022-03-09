@@ -9,28 +9,25 @@ import { Close, Menu } from "@mui/icons-material";
 import { useState } from "react";
 
 function App() {
-  const [sideBar,setSidebar]=useState(true)
-  const showSidebar=()=>setSidebar(!sideBar)
+  const [sideBar, setSidebar] = useState(true);
+  const showSidebar = () => setSidebar(!sideBar);
   return (
-    <div className="App">
+    <Container>
       <BrowserRouter>
-        <Container>
-          <ButtonContainer onClick={showSidebar}>
-           {sideBar ?
-            (<Menu sx={{ color: "#fff" }} />)
-            :
-            (<Close sx={{ color: "#fff" }} />)
-           
-           }
-          </ButtonContainer>
-          <Sidebar behavour={sideBar} />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/wallet" element={<Wallet />} />
-          </Routes>
-        </Container>
+        <ButtonContainer onClick={showSidebar}>
+          {sideBar ? (
+            <Menu sx={{ color: "#fff" }} />
+          ) : (
+            <Close sx={{ color: "#fff" }} />
+          )}
+        </ButtonContainer>
+        {/* <Sidebar behavour={sideBar} /> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/wallet" element={<Wallet />} />
+        </Routes>
       </BrowserRouter>
-    </div>
+    </Container>
   );
 }
 
