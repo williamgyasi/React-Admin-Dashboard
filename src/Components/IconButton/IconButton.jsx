@@ -2,11 +2,11 @@ import React from 'react'
 
 import {IconButtonG,IconButtonText} from './iconbutton-styles'
 
-function IconButton({children,buttonText}) {
+function IconButton({children,buttonText,noBg}) {
   return (
-    <IconButtonG noBg>
+    <IconButtonG noBg={noBg}>
         {children}
-        <IconButtonText noBg>{buttonText}</IconButtonText>
+        <IconButtonText noBg={noBg}>{buttonText}</IconButtonText>
     </IconButtonG>
   )
 }

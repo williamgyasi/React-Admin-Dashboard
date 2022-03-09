@@ -8,14 +8,18 @@ import {
   TreeImg,
   PlantedTitle,
   Avatar,
-  TitleSm
+  TitleSm,
+  ButtonContainer
 } from "./header-styles";
-import { SearchBar } from "..";
-import { KeyboardArrowDown, NotificationsOutlined } from "@mui/icons-material";
+import { IconButton, SearchBar } from "..";
+import { KeyboardArrowDown, Menu, NotificationsOutlined } from "@mui/icons-material";
 
 function Header() {
   return (
     <HeadG>
+        <ButtonContainer>
+        <Menu sx={{color:"#22c55E"}} />
+        </ButtonContainer>
       <TitleLg>Welcome,Huss Smith</TitleLg>
       <Profiler>
         <SearchBar />

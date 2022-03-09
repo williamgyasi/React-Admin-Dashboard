@@ -15,6 +15,10 @@ export const TitleLg=styled.h3`
     font-style: normal;
 `
 
+export const ButtonContainer=styled.div`
+    
+`
+
 export const TitleSm=styled.h4`
 font-size: 12px;
 color:${props=>props.color};

@@ -23,6 +23,9 @@ export const Section = styled.div`
   flex-direction: column;
   align-items: center;
   position: -webkit-sticky;
+  @media only screen and (max-width:320px){
+    left: -250px;
+  }
 `;
 
 export const Fixed = styled.div`
