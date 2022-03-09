@@ -7,6 +7,10 @@ export const HeadG = styled.div`
   align-items: center;
   justify-content: space-between;
   position: relative;
+
+  @media only screen and (max-width: 320px) {
+    flex-direction: column;
+  }
 `;
 
 export const TitleLg = styled.h3`
@@ -25,9 +29,11 @@ export const ButtonContainer = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: -15px;
-  top: 5px;
+  left: 5px;
+  top: 10px;
+  cursor: pointer;
  visibility: hidden;
+ z-index: 100;
  @media only screen and (max-width:320px){
     visibility: visible;
   }

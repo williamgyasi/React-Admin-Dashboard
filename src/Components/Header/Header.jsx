@@ -24,9 +24,7 @@ function Header() {
   const showSideBar=()=>setSideBar(!sideBar)
   return (
     <HeadG>
-      <ButtonContainer onClick={showSideBar}>
-        <Menu sx={{ color: "#fff" }} />
-      </ButtonContainer>
+      
       <TitleLg>Welcome,Huss Smith</TitleLg>
       <Profiler>
         <SearchBar />
