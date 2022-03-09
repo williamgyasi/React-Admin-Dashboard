@@ -4,12 +4,14 @@ import uk from "../../Assets/uk.png";
 import peru from "../../Assets/periut.png";
 
 export const MainB = styled.div`
-  flex: 4;
   flex-direction: column;
-  padding: 20px 30px;
+  padding: 20px 10px;
+  max-width: calc(100vw * 0.81);
+  margin-left: 250px;
   @media only screen and (max-width: 320px) {
     padding: 10px 20px;
-    
+    margin-left: 0;
+    width: 100%;
   }
 `;
 
@@ -29,6 +31,11 @@ export const WalletCardsContainer = styled.div`
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  @media only screen and (max-width: 320px) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-bottom: 10px;
+  }
 `;
 
 export const WalletText = styled.h3`
@@ -47,6 +54,9 @@ export const WalletCards = styled.div`
   background-color: ${(props) => props.bgColor};
   border-radius: 10px;
   margin-right: 10px;
+  @media only screen and (max-width: 320px) {
+      width: 100%;
+  }
 `;
 
 export const CardTop = styled.div`

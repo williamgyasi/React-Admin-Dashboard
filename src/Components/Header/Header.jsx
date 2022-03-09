@@ -10,7 +10,6 @@ import {
   Avatar,
   TitleSm,
   ButtonContainer,
-  
 } from "./header-styles";
 import { IconButton, SearchBar } from "..";
 import {
@@ -20,12 +19,12 @@ import {
 } from "@mui/icons-material";
 
 function Header() {
-  const [sideBar,setSideBar]=useState(true);
-  const showSideBar=()=>setSideBar(!sideBar)
+  const [sideBar, setSideBar] = useState(true);
+  const showSideBar = () => setSideBar(!sideBar);
   return (
     <HeadG>
-      
       <TitleLg>Welcome,Huss Smith</TitleLg>
+
       <Profiler>
         <SearchBar />
         <PlantedContainer>

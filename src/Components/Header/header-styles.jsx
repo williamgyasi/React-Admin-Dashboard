@@ -10,6 +10,10 @@ export const HeadG = styled.div`
 
   @media only screen and (max-width: 320px) {
     flex-direction: column;
+    align-items: flex-start;
+   
+    padding: 10px;
+    margin-top: 30px;
   }
 `;
 
@@ -19,6 +23,12 @@ export const TitleLg = styled.h3`
   line-height: 100%;
   font-style: normal;
   margin-left: 20px;
+  @media only screen and (max-width: 320px) {
+    font-size: 16px;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -48,7 +58,11 @@ export const TitleSm = styled.h4`
 export const Profiler = styled.div`
   display: flex;
   align-items: center;
+  @media only screen and (max-width: 320px) {
+    flex-direction: column;
+  }
 `;
+
 
 export const PlantedContainer = styled.div`
   display: flex;
@@ -56,6 +70,10 @@ export const PlantedContainer = styled.div`
   justify-content: center;
   margin-left: 20px;
   margin-right: 20px;
+  @media only screen and (max-width: 320px) {
+    flex-direction: row;
+    margin: 0;
+  }
 `;
 
 export const PlantedTitle = styled.span`
@@ -79,6 +97,12 @@ export const ProfileContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   margin-left: 20px;
+  @media only screen and (max-width: 320px) {
+    font-size: 16px;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
 `;
 
 export const Avatar = styled.img.attrs({

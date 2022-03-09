@@ -7,8 +7,11 @@ export const SearchG=styled.div`
     height: 45px;
     border: 1px solid #AAC0C5;
     border-radius: 16px;
-
     padding: 15px;
+
+    @media only screen and (max-width: 320px) {
+    width: 100%;
+  }
 `
 
 export const TextInput=styled.input.attrs({
