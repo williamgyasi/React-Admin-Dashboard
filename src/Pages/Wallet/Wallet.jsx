@@ -5,9 +5,9 @@ import { Header, MainBoard, Sidebar,WalletBoard } from "../../Components";
 
 function Wallet() {
   return (
-    <WalletG>
+
       <WalletBoard/>
-    </WalletG>
+
   );
 }
 

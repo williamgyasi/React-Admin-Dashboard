@@ -8,9 +8,6 @@ export const HeadG = styled.div`
   justify-content: space-between;
   position: relative;
 
-  @media only screen and (max-width: 76px) {
-   
-  }
 `;
 
 export const TitleLg = styled.h3`
@@ -19,9 +16,8 @@ export const TitleLg = styled.h3`
   line-height: 100%;
   font-style: normal;
   margin-left: 20px;
-  @media only screen and (max-width: 768px){
-  font-size:15px;
-
+  @media only screen and (max-width: 1000px) {
+   font-size: 15px;
   }
 `;
 
@@ -47,6 +43,9 @@ export const TitleSm = styled.h4`
   font-size: 12px;
   color: ${(props) => props.color};
   font-weight: 500;
+  @media only screen and (max-width: 1000px) {
+   font-size: 10px;
+  }
 `;
 
 export const Profiler = styled.div`

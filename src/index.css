@@ -7,5 +7,6 @@
 body{
   font-family: 'Nunito Sans','Courier New', Courier, monospace;
   font-weight: 400;
-  
+  height: 100vh;
+  overflow: auto;
 }

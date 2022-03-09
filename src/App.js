@@ -3,7 +3,7 @@ import Home from "./Pages/Home/Home";
 import Wallet from "./Pages/Wallet/Wallet";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Sidebar } from "./Components";
-import { Container } from "./app-styles";
+import { Container, MainDiv } from "./app-styles";
 import { ButtonContainer } from "./Components/Header/header-styles";
 import { Close, Menu } from "@mui/icons-material";
 import { useState } from "react";
@@ -22,10 +22,12 @@ function App() {
           )}
         </ButtonContainer>
         <Sidebar behavour={sideBar} />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/wallet" element={<Wallet />} />
-        </Routes>
+        <MainDiv>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/wallet" element={<Wallet />} />
+          </Routes>
+        </MainDiv>
       </BrowserRouter>
     </Container>
   );

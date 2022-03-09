@@ -7,40 +7,30 @@ import { Link } from "react-router-dom";
 export const Section = styled.div`
   background-color: ${CONSTANTS.THEME.colorBlue};
   color: #fff;
-  width: 250px;
-  flex: 1;
-  max-width: 100%;
-  min-height: 100vh;
+  flex: 1 0 20%;
   transition: all 500ms ease-in;
-  height: 100%;
+  height: 100vh;
   position: relative;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: -webkit-sticky;
   z-index: 10;
-  @media only screen and (max-width:320px){
-    left: ${props=>props.active?"-250px":"0px" };
+  @media only screen and (max-width: 768px) {
+  }
+
+  @media only screen and (max-width: 320px) {
+    left: ${(props) => (props.active ? "-250px" : "0px")};
   }
 `;
 
 export const Fixed = styled.div`
   width: 250px;
   height: 100%;
-  
+
   flex-basis: 250px;
   top: 0;
   left: 0;
   right: 0;
-
-  @media only screen and  (max-with:320px){
-
-  }
 `;
 
 export const LogoContainer = styled.div`
@@ -59,6 +49,9 @@ export const WalletContainer = styled.div`
   padding: 10px;
   width: 90%;
   border-radius: 10px;
+  @media only screen and (max-width: 768px) {
+    padding: 10px 15px;
+  }
 `;
 export const WalletList = styled.div`
   display: flex;
@@ -70,6 +63,9 @@ export const WalletList = styled.div`
 export const TextContainer = styled.div`
   margin-right: auto;
   margin-left: 20px;
+  @media only screen and (max-width: 768px) {
+    margin-left: 10px;
+  }
 `;
 
 //TITLE STYLES

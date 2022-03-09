@@ -6,19 +6,11 @@ import { Header, MainBoard, Sidebar } from "../../Components";
 
 const Home = () => {
   return (
-    <Dashb>
+   
     <MainBoard />
-  </Dashb>
+
   );
 };
 
-const Dashb = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  min-height: 100%;
-  height: 100vh;
-
-  
-`;
 
 export default Home;

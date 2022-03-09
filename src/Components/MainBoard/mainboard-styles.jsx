@@ -7,11 +7,11 @@ export const MainB = styled.div`
   flex-direction: column;
   padding: 20px 10px;
   width: 100%;
-  height: max-content;
-  background-color: red;
-  @media only screen and (max-width: 320px) {
-  }
+  height: 100vh;
+overflow: scroll;
 `;
+
+
 
 export const WalletContainer = styled.div`
   margin-top: 5px;
@@ -30,9 +30,9 @@ export const WalletCardsContainer = styled.div`
   flex-wrap: nowrap;
   align-items: center;
   @media only screen and (max-width: 320px) {
-      flex-direction: column;
-      flex-wrap: nowrap;
-      margin-bottom: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
   }
 `;
 
@@ -53,7 +53,7 @@ export const WalletCards = styled.div`
   border-radius: 10px;
   margin-right: 10px;
   @media only screen and (max-width: 320px) {
-      width: 100%;
+    width: 100%;
   }
 `;
 
