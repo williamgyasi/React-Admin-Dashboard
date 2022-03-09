@@ -29,7 +29,7 @@ export const WalletCardsContainer = styled.div`
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  @media only screen and (max-width: 350px) {
+  @media only screen and (max-width: 370px) {
     flex-direction: column;
     flex-wrap: nowrap;
     margin-bottom: 10px;
@@ -44,7 +44,7 @@ export const WalletText = styled.h3`
   font-weight: ${(props) => (props.bold ? "700" : "600")};
   margin-left: ${(props) => props.ml};
   margin-right: ${(props) => props.mr};
-  @media only screen and (max-width: 350px) {
+  @media only screen and (max-width: 370px) {
     font-size: 14px;
   }
 `;
@@ -55,7 +55,7 @@ export const WalletCards = styled.div`
   background-color: ${(props) => props.bgColor};
   border-radius: 10px;
   margin-right: 10px;
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 350px) {
     width: 100%;
     margin-bottom: 20px;
   }
@@ -118,7 +118,7 @@ export const LinksCard = styled.div`
   border: 1px solid #f1f5f9;
   text-align: "center";
   cursor: pointer;
-  @media only screen and (max-width: 350px) {
+  @media only screen and (max-width: 370px) {
     width: 100%;
     margin-bottom: 10px;
   }

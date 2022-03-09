@@ -9,7 +9,7 @@ export const Section = styled.div`
   color: #fff;
   flex: 1 0 20%;
   transition: all 500ms ease-in;
-  height: 100vh;
+
   position: relative;
   display: flex;
   flex-direction: column;
