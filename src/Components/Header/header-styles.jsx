@@ -8,12 +8,8 @@ export const HeadG = styled.div`
   justify-content: space-between;
   position: relative;
 
-  @media only screen and (max-width: 320px) {
-    flex-direction: column;
-    align-items: flex-start;
+  @media only screen and (max-width: 76px) {
    
-    padding: 10px;
-    margin-top: 30px;
   }
 `;
 
@@ -23,11 +19,9 @@ export const TitleLg = styled.h3`
   line-height: 100%;
   font-style: normal;
   margin-left: 20px;
-  @media only screen and (max-width: 320px) {
-    font-size: 16px;
-    align-items: flex-start;
-    margin-left: 0;
-    margin-bottom: 10px;
+  @media only screen and (max-width: 768px){
+  font-size:15px;
+
   }
 `;
 

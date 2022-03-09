@@ -7,6 +7,8 @@ export const MainB = styled.div`
   flex-direction: column;
   padding: 20px 10px;
   width: 100%;
+  height: max-content;
+  background-color: red;
   @media only screen and (max-width: 320px) {
   }
 `;

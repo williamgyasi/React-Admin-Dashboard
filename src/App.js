@@ -21,7 +21,7 @@ function App() {
             <Close sx={{ color: "#fff" }} />
           )}
         </ButtonContainer>
-        {/* <Sidebar behavour={sideBar} /> */}
+        <Sidebar behavour={sideBar} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/wallet" element={<Wallet />} />
